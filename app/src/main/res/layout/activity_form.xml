@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FormActivity">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/banner" />
+
+    <View style="@style/divider" />
+
+
+    <TextView
+        style="@style/header_title"
+        android:drawableLeft="@drawable/fuel_icon"
+        android:text="Posto de Gasolina" />
+
+    <View style="@style/divider" />
+
+<LinearLayout style="@style/container_row">
+
+    <TextView
+        style="@style/header_subtitle"
+        android:text="Preço Gasolina" />
+
+    <TextView
+        style="@style/header_subtitle"
+        android:text="Preço Etanol"/>
+
+</LinearLayout>
+
+    <LinearLayout style="@style/container_row">
+
+    <EditText
+        style="@style/input_number_decimal"
+    android:hint="Ex.:R$4.19" />
+
+    <EditText
+        style="@style/input_number_decimal"
+    android:hint="Ex.:R$2.49" />
+
+</LinearLayout>
+
+
+
+<View style="@style/divider" />
+
+<TextView
+style="@style/header_title"
+android:drawableStart="@drawable/car_icon"
+android:text="Consumo médio" />
+
+    <LinearLayout style="@style/container_row">
+
+        <EditText
+            android:id="@+id/etGasolinaAverage"
+            style="@style/input_number_decimal"
+            android:hint="Ex.:8.5km" />
+
+        <EditText
+            style="@style/input_number_decimal"
+            android:hint="Ex.:6.5km" />
+
+    </LinearLayout>
+
+<View style="@style/divider" />
+
+<LinearLayout style="@style/container_row">
+
+<TextView
+    style="@style/header_subtitle"
+    android:text="Km/L Gasolina" />
+
+    style="@style/"
+    tools:text="0.30" android:id="@+id/tvGasAverageResult"/>
+
+
+    <TextView
+    style="@style/header_subtitle"
+    android:text="Km/L Etanol" />
+
+    <TextView
+        style="@style/value_spent_footer"
+        tools:text="0.30" android:id="@+id/tvGasAverageResult"/>
+
+    <TextView
+        style="@style/value_spent_footer"
+        tools:text="0.30" android:id="@+id/tvEthanolAverageResult"/>
+</LinearLayout>
+
+    <LinearLayout style="@style/container_row">
+
+        <TextView
+            style="@style/label_spent_footer"
+            android:text="@string/gasoline"
+            />
+
+        <TextView
+            style="@style/label_spent_footer"
+            android:text="@string/ethanol"/>
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
+
+
+
+
+</LinearLayout>
+
+<Button
+android:layout_width="match_parent"
+android:layout_heiht="wrap_content"
+android:text="Calculat"/>
+
+</LinearLayout>
